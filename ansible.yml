@@ -1,0 +1,5 @@
+---
+- name: welcome taks
+  hosts: mygroup
+  - name: shutdown
+    command: /sbin/shutdown -t now
