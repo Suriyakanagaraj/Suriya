@@ -2,4 +2,5 @@
 - name: welcome taks
   hosts: mygroup
   - name: shutdown
-    command: /sbin/shutdown -t now
+    copy: content="Hi welcome to CAT team" dest=/etc/motd
+    
